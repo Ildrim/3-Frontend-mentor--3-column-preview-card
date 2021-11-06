@@ -8,31 +8,23 @@
 *::after {
   box-sizing: border-box;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-/*breaks my border when i use the media query on it for desktop mode*/
-
-/*.container{
+main{
+  width: fit-content;
+  margin-inline: auto;
   border-radius: 10px;
-  overflow: hidden;
-}*/
+  overflow:hidden;
+}
 
 .card-container {
   color: hsl(0, 0%, 100%);
   padding: 3em;
   margin:0 auto;
   max-width: 331px;
-
 }
 
 .card-container--1 {
   background-color: hsl(31, 77%, 52%);
-  border-radius: 10px 10px 0 0;
 }
 
 .card-container--2 {
@@ -41,7 +33,6 @@ body {
 
 .card-container--3 {
   background-color: hsl(179, 100%, 13%);
-  border-radius: 0 0 10px 10px;
 }
 
 h1 {
@@ -108,20 +99,19 @@ p {
 }
 
 @media (min-width:1050px) {
+
   main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
   }
 
   .card-container--1 {
     background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0px 0px 10px;
-
-}
+  }
 
 .card-container--3 {
   background-color: hsl(179, 100%, 13%);
-  border-radius: 0px 10px 10px 0;
+  }
+}
